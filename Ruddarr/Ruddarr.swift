@@ -78,7 +78,7 @@ extension WhatsNew {
         .init(
             image: "globe",
             title: "Translations",
-            subtitle: "Added Italian and Turkish translations. Removed Chinese translation."
+            subtitle: "Added Italian + Turkish translations, removed Chinese translation."
         ),
         .init(
             image: "eye.slash",
