@@ -78,7 +78,7 @@ struct DiscoveryGridPoster: View {
             }
         }
         .clipShape(RoundedRectangle(cornerRadius: 14))
-        .alert(
+        .errorAlert(
             isPresented: Binding(
                 get: { self.error != nil },
                 set: { _ in }

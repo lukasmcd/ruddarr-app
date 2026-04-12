@@ -76,7 +76,7 @@ struct InstanceEditView: View {
                 await createOrUpdateInstance()
             }
         }
-        .alert(isPresented: $showingAlert, error: error) { _ in
+        .errorAlert(isPresented: $showingAlert, error: error) { _ in
             Button("OK") { error = nil }
         } message: { error in
             Text(error.recoverySuggestionFallback)

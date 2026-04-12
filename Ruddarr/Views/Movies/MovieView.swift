@@ -30,7 +30,7 @@ struct MovieView: View {
         .onBecomeActive {
             await reload()
         }
-        .alert(
+        .errorAlert(
             isPresented: instance.movies.errorBinding,
             error: instance.movies.error
         ) { _ in

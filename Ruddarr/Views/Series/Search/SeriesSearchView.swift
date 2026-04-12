@@ -62,7 +62,7 @@ struct SeriesSearchView: View {
         ) { _ in
             performSearch()
         }
-        .alert(
+        .errorAlert(
             isPresented: instance.lookup.errorBinding,
             error: instance.lookup.error
         ) { _ in

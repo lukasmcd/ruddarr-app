@@ -26,7 +26,7 @@ struct SeriesPreviewView: View {
         .toolbar {
             toolbarNextButton
         }
-        .alert(
+        .errorAlert(
             isPresented: instance.series.errorBinding,
             error: instance.series.error
         ) { _ in

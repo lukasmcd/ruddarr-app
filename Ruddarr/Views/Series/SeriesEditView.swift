@@ -31,7 +31,7 @@ struct SeriesEditView: View {
                     undoSeriesChanges()
                 }
             }
-            .alert(
+            .errorAlert(
                 isPresented: instance.series.errorBinding,
                 error: instance.series.error
             ) { _ in

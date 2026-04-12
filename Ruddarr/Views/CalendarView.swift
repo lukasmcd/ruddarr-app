@@ -94,7 +94,7 @@ struct CalendarView: View {
             .task {
                 await load()
             }
-            .alert(
+            .errorAlert(
                 isPresented: $alertPresented,
                 error: calendar.error
             ) { _ in

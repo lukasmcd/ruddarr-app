@@ -39,7 +39,7 @@ struct TaskRemovalView: View {
         .toolbar {
             toolbarRemoveButton
         }
-        .alert(
+        .errorAlert(
             isPresented: Binding(
                 get: { self.error != nil },
                 set: { _ in }

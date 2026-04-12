@@ -58,7 +58,7 @@ struct InstanceView: View {
         .onBecomeActive {
             await setup()
         }
-        .alert(
+        .errorAlert(
             isPresented: webhook.errorBinding,
             error: webhook.error
         ) { _ in

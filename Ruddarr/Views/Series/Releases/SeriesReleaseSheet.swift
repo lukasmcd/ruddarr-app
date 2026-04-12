@@ -46,7 +46,7 @@ struct SeriesReleaseSheet: View {
                     .tint(.primary)
                 }
             }
-            .alert(
+            .errorAlert(
                 isPresented: instance.series.errorBinding,
                 error: instance.series.error
             ) { _ in

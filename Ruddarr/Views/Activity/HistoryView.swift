@@ -53,7 +53,7 @@ struct HistoryView: View {
         .onChange(of: displayedEventType) {
             Task { await history.fetch(1, displayedEventType) }
         }
-        .alert(
+        .errorAlert(
             isPresented: history.errorBinding,
             error: history.error
         ) { _ in

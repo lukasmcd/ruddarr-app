@@ -48,7 +48,7 @@ struct SeasonView: View {
         .onBecomeActive {
             await reload()
         }
-        .alert(
+        .errorAlert(
             isPresented: instance.episodes.errorBinding,
             error: instance.episodes.error
         ) { _ in
@@ -56,7 +56,7 @@ struct SeasonView: View {
         } message: { error in
             Text(error.recoverySuggestionFallback)
         }
-        .alert(
+        .errorAlert(
             isPresented: instance.files.errorBinding,
             error: instance.files.error
         ) { _ in
